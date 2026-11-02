@@ -19,8 +19,8 @@ def caching_fibonacci():
     return fibonacci
 
 
-fib = caching_fibonacci()
+if __name__ == "__main__":
+    fib = caching_fibonacci()
 
-print(fib(10))
-print(fib(15))
-print(fib(10))
+    print(fib(10))
+    print(fib(15))

@@ -56,11 +56,11 @@ def count_logs_by_level(logs: list) -> dict:
 
 
 def display_log_counts(counts: dict):
-    print(f"{'Рівень логування':<20} | Кількість")
-    print("-" * 35)
+    print(f"{'Рівень логування':<17}| {'Кількість'}")
+    print(f"{'-' * 17}|{'-' * 10}")
 
     for level, count in counts.items():
-        print(f"{level:<20} | {count}")
+        print(f"{level:<17}| {count}")
 
 
 def main():
